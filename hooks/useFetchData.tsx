@@ -10,7 +10,6 @@ const UseFetchData = () => {
   });
 
   const fetchData = async (url: string) => {
-    console.log("WAAAAAAAA");
     setIsLoading(true);
     try {
       const response = await instance.get(url);

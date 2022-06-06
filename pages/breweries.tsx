@@ -7,7 +7,7 @@ import PaginationBar from "../components/PaginationBar";
 import axios from "axios";
 
 type BreweriesProps = {
-  initialBreweries: {};
+  initialBreweries: [];
 };
 
 const Breweries: FC<BreweriesProps> = ({ initialBreweries }): JSX.Element => {
