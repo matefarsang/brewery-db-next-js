@@ -30,7 +30,6 @@ const PaginationBar = () => {
     for (let number = floor; number <= floor + 4 && number <= 802; number++) {
       pagination.push(
         <Pagination.Item
-          size="sm"
           key={number}
           active={number === page}
           value={number}
