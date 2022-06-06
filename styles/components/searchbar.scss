@@ -1,0 +1,16 @@
+.search-wrapper {
+  margin: 1rem;
+  .form-control {
+    background-color: $text-color;
+  }
+  .list-group {
+    margin-top: -1rem;
+    .list-group-item {
+      background: $bg-light;
+      color: white;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

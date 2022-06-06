@@ -1,0 +1,14 @@
+.navbar {
+  box-shadow: 0 0 4px $primary-color;
+  height: $nav-height;
+  background-color: $bg-color;
+  .navbar-brand {
+    @include flex(row, space-between, center);
+    .brand-name {
+      padding-left: 1rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $text-color;
+    }
+  }
+}

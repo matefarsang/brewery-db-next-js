@@ -1,0 +1,19 @@
+.pagination {
+  @include flex(row, center, center);
+  .page-item {
+    .page-link {
+      background-color: $text-color;
+    }
+    &.active .page-link {
+      color: black;
+      background-color: $primary-color;
+      border-color: $primary-color;
+      font-weight: 600;
+      margin: 0.2rem 0.2rem 0.2rem 0;
+    }
+    a {
+      color: black;
+      margin: 0.2rem;
+    }
+  }
+}

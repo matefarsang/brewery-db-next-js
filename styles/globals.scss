@@ -1,0 +1,61 @@
+$primary-color: #ffc107;
+$bg-color: #0c0e0f;
+$bg-light: #ffffff33;
+$text-color: #eed7ad;
+$nav-height: 5rem;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@font-face {
+  font-family: "CandyCane";
+  src: url("../public/fonts/CandyCane.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: $text-color;
+  font-size: 12px;
+  @media (min-width: 577px) {
+    font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: $bg-color;
+  min-height: 100vh;
+  padding-top: calc($nav-height + 2rem);
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.subtitle {
+  text-align: center;
+  padding: 1rem 0.3rem;
+  color: $primary-color;
+}
+
+th {
+  color: $primary-color;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: $primary-color;
+  }
+}
