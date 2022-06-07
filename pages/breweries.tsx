@@ -30,7 +30,7 @@ const Breweries: FC<BreweriesProps> = ({ initialBreweries }): JSX.Element => {
         <h2 className="subtitle">All breweries</h2>
         <p className="description">
           You can use pagination to navigate between pages. Click to the
-          brewery&apos;s name for more details.
+          brewery&apos;s name or the web link for more details.
         </p>
         {isLoading ? (
           <div className="spinner-container">
