@@ -28,7 +28,15 @@ const DataTable = (): JSX.Element => {
               </td>
               <td>{brewery.country}</td>
               <td>{brewery.brewery_type}</td>
-              <td>{brewery.website_url}</td>
+              <td>
+                <a
+                  href={`${brewery.website_url}` as string}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {brewery.website_url}
+                </a>
+              </td>
             </tr>
           ))}
       </tbody>
